@@ -1,0 +1,597 @@
+FLIB_HPCFUNC=TRUE
+FLIB_SCCR_CNTL=TRUE
+FLIB_L1_SCCR_CNTL=FALSE
+XOS_MMM_L_HPAGE_TYPE=hugetlbfs
+XOS_MMM_L_PAGING_POLICY=demand:demand:demand
+using bin/csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways to perform matrix-vector multiplication
+csrspmv 1.6
+row/column offsets: 32-bit
+page-aligned allocations: yes (page size: 65536)
+OpenMP: yes (201107)
+zlib: yes (1.2.11)
+PAPI: yes (5.6.0.0)
+Fujitsu compiler version: 4.9.0
+Fujitsu A64FX sector cache support enabled (L1 ways: 3, L2 ways: 12)
+
+Copyright (C) 2023 James D. Trotter
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/HB
+1 of 489: running sparse matrix-vector multiply benchmark for original/HB/bcsstk30.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/HB/bcsstk30-stderr.txt for results
+2 of 489: running sparse matrix-vector multiply benchmark for original/HB/bcsstk31.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/HB/bcsstk31-stderr.txt for results
+3 of 489: running sparse matrix-vector multiply benchmark for original/HB/bcsstk32.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/HB/bcsstk32-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/ATandT
+4 of 489: running sparse matrix-vector multiply benchmark for original/ATandT/pre2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/ATandT/pre2-stderr.txt for results
+5 of 489: running sparse matrix-vector multiply benchmark for original/ATandT/twotone.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/ATandT/twotone-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing
+6 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/bcsstk35.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/bcsstk35-stderr.txt for results
+7 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/bcsstk36.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/bcsstk36-stderr.txt for results
+8 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/bcsstk37.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/bcsstk37-stderr.txt for results
+9 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/crystk03.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/crystk03-stderr.txt for results
+10 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/ct20stif.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/ct20stif-stderr.txt for results
+11 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/msc10848.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/msc10848-stderr.txt for results
+12 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/msc23052.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/msc23052-stderr.txt for results
+13 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/pcrystk03.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/pcrystk03-stderr.txt for results
+14 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/pct20stif.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/pct20stif-stderr.txt for results
+15 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/pwtk.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/pwtk-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bova
+16 of 489: running sparse matrix-vector multiply benchmark for original/Bova/rma10.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bova/rma10-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/FIDAP
+17 of 489: running sparse matrix-vector multiply benchmark for original/FIDAP/ex11.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/FIDAP/ex11-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Goodwin
+18 of 489: running sparse matrix-vector multiply benchmark for original/Goodwin/rim.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Goodwin/rim-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gupta
+19 of 489: running sparse matrix-vector multiply benchmark for original/Gupta/gupta1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gupta/gupta1-stderr.txt for results
+20 of 489: running sparse matrix-vector multiply benchmark for original/Gupta/gupta2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gupta/gupta2-stderr.txt for results
+21 of 489: running sparse matrix-vector multiply benchmark for original/Gupta/gupta3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gupta/gupta3-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Li
+22 of 489: running sparse matrix-vector multiply benchmark for original/Li/li.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Li/li-stderr.txt for results
+23 of 489: running sparse matrix-vector multiply benchmark for original/Li/pli.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Li/pli-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mallya
+24 of 489: running sparse matrix-vector multiply benchmark for original/Mallya/lhr71.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mallya/lhr71-stderr.txt for results
+25 of 489: running sparse matrix-vector multiply benchmark for original/Mallya/lhr71c.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mallya/lhr71c-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nasa
+26 of 489: running sparse matrix-vector multiply benchmark for original/Nasa/nasasrb.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nasa/nasasrb-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nemeth
+27 of 489: running sparse matrix-vector multiply benchmark for original/Nemeth/nemeth21.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nemeth/nemeth21-stderr.txt for results
+28 of 489: running sparse matrix-vector multiply benchmark for original/Nemeth/nemeth22.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nemeth/nemeth22-stderr.txt for results
+29 of 489: running sparse matrix-vector multiply benchmark for original/Nemeth/nemeth23.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nemeth/nemeth23-stderr.txt for results
+30 of 489: running sparse matrix-vector multiply benchmark for original/Nemeth/nemeth24.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nemeth/nemeth24-stderr.txt for results
+31 of 489: running sparse matrix-vector multiply benchmark for original/Nemeth/nemeth25.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nemeth/nemeth25-stderr.txt for results
+32 of 489: running sparse matrix-vector multiply benchmark for original/Nemeth/nemeth26.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Nemeth/nemeth26-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Ronis
+33 of 489: running sparse matrix-vector multiply benchmark for original/Ronis/xenon1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Ronis/xenon1-stderr.txt for results
+34 of 489: running sparse matrix-vector multiply benchmark for original/Ronis/xenon2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Ronis/xenon2-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rothberg
+35 of 489: running sparse matrix-vector multiply benchmark for original/Rothberg/3dtube.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rothberg/3dtube-stderr.txt for results
+36 of 489: running sparse matrix-vector multiply benchmark for original/Rothberg/cfd1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rothberg/cfd1-stderr.txt for results
+37 of 489: running sparse matrix-vector multiply benchmark for original/Rothberg/cfd2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rothberg/cfd2-stderr.txt for results
+38 of 489: running sparse matrix-vector multiply benchmark for original/Rothberg/gearbox.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rothberg/gearbox-stderr.txt for results
+39 of 489: running sparse matrix-vector multiply benchmark for original/Rothberg/struct3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rothberg/struct3-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon
+40 of 489: running sparse matrix-vector multiply benchmark for original/Simon/appu.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon/appu-stderr.txt for results
+41 of 489: running sparse matrix-vector multiply benchmark for original/Simon/bbmat.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon/bbmat-stderr.txt for results
+42 of 489: running sparse matrix-vector multiply benchmark for original/Simon/olafu.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon/olafu-stderr.txt for results
+43 of 489: running sparse matrix-vector multiply benchmark for original/Simon/raefsky3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon/raefsky3-stderr.txt for results
+44 of 489: running sparse matrix-vector multiply benchmark for original/Simon/raefsky4.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon/raefsky4-stderr.txt for results
+45 of 489: running sparse matrix-vector multiply benchmark for original/Simon/venkat01.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon/venkat01-stderr.txt for results
+46 of 489: running sparse matrix-vector multiply benchmark for original/Simon/venkat25.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon/venkat25-stderr.txt for results
+47 of 489: running sparse matrix-vector multiply benchmark for original/Simon/venkat50.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Simon/venkat50-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Vavasis
+48 of 489: running sparse matrix-vector multiply benchmark for original/Vavasis/av41092.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Vavasis/av41092-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Cunningham
+49 of 489: running sparse matrix-vector multiply benchmark for original/Cunningham/qa8fk.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Cunningham/qa8fk-stderr.txt for results
+50 of 489: running sparse matrix-vector multiply benchmark for original/Cunningham/qa8fm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Cunningham/qa8fm-stderr.txt for results
+51 of 489: running sparse matrix-vector multiply benchmark for original/Boeing/bcsstk39.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Boeing/bcsstk39-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen
+52 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk03.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk03-stderr.txt for results
+53 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk04.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk04-stderr.txt for results
+54 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk05.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk05-stderr.txt for results
+55 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk06.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk06-stderr.txt for results
+56 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk07.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk07-stderr.txt for results
+57 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk08.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk08-stderr.txt for results
+58 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk09.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk09-stderr.txt for results
+59 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk10.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk10-stderr.txt for results
+60 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk11.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk11-stderr.txt for results
+61 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk12.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk12-stderr.txt for results
+62 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk13.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk13-stderr.txt for results
+63 of 489: running sparse matrix-vector multiply benchmark for original/Chen/pkustk14.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Chen/pkustk14-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Norris
+64 of 489: running sparse matrix-vector multiply benchmark for original/Norris/heart1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Norris/heart1-stderr.txt for results
+65 of 489: running sparse matrix-vector multiply benchmark for original/Norris/stomach.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Norris/stomach-stderr.txt for results
+66 of 489: running sparse matrix-vector multiply benchmark for original/Norris/torso1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Norris/torso1-stderr.txt for results
+67 of 489: running sparse matrix-vector multiply benchmark for original/Norris/torso2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Norris/torso2-stderr.txt for results
+68 of 489: running sparse matrix-vector multiply benchmark for original/Norris/torso3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Norris/torso3-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/vanHeukelum
+69 of 489: running sparse matrix-vector multiply benchmark for original/vanHeukelum/cage12.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/vanHeukelum/cage12-stderr.txt for results
+70 of 489: running sparse matrix-vector multiply benchmark for original/vanHeukelum/cage13.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/vanHeukelum/cage13-stderr.txt for results
+71 of 489: running sparse matrix-vector multiply benchmark for original/vanHeukelum/cage14.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/vanHeukelum/cage14-stderr.txt for results
+72 of 489: running sparse matrix-vector multiply benchmark for original/vanHeukelum/cage15.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/vanHeukelum/cage15-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/FEMLAB
+73 of 489: running sparse matrix-vector multiply benchmark for original/FEMLAB/ns3Da.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/FEMLAB/ns3Da-stderr.txt for results
+74 of 489: running sparse matrix-vector multiply benchmark for original/FEMLAB/poisson3Db.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/FEMLAB/poisson3Db-stderr.txt for results
+75 of 489: running sparse matrix-vector multiply benchmark for original/FEMLAB/sme3Db.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/FEMLAB/sme3Db-stderr.txt for results
+76 of 489: running sparse matrix-vector multiply benchmark for original/FEMLAB/sme3Dc.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/FEMLAB/sme3Dc-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/ND
+77 of 489: running sparse matrix-vector multiply benchmark for original/ND/nd3k.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/ND/nd3k-stderr.txt for results
+78 of 489: running sparse matrix-vector multiply benchmark for original/ND/nd6k.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/ND/nd6k-stderr.txt for results
+79 of 489: running sparse matrix-vector multiply benchmark for original/ND/nd12k.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/ND/nd12k-stderr.txt for results
+80 of 489: running sparse matrix-vector multiply benchmark for original/ND/nd24k.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/ND/nd24k-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE
+81 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell1-stderr.txt for results
+82 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell2-stderr.txt for results
+83 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell3-stderr.txt for results
+84 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell4.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell4-stderr.txt for results
+85 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell5.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell5-stderr.txt for results
+86 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell6.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell6-stderr.txt for results
+87 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell7.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell7-stderr.txt for results
+88 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell8.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell8-stderr.txt for results
+89 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell9.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell9-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_IBMNA
+90 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_IBMNA/c-73.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_IBMNA/c-73-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_IBMSDS
+91 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_IBMSDS/matrix_9.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_IBMSDS/matrix_9-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI
+92 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/barrier2-10.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/barrier2-10-stderr.txt for results
+93 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/barrier2-11.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/barrier2-11-stderr.txt for results
+94 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/barrier2-12.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/barrier2-12-stderr.txt for results
+95 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/barrier2-1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/barrier2-1-stderr.txt for results
+96 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/barrier2-2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/barrier2-2-stderr.txt for results
+97 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/barrier2-3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/barrier2-3-stderr.txt for results
+98 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/barrier2-4.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/barrier2-4-stderr.txt for results
+99 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/barrier2-9.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/barrier2-9-stderr.txt for results
+100 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/ohne2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/ohne2-stderr.txt for results
+101 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/para-10.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/para-10-stderr.txt for results
+102 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/para-4.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/para-4-stderr.txt for results
+103 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/para-5.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/para-5-stderr.txt for results
+104 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/para-6.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/para-6-stderr.txt for results
+105 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/para-7.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/para-7-stderr.txt for results
+106 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/para-8.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/para-8-stderr.txt for results
+107 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_ISEI/para-9.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_ISEI/para-9-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Kamvar
+108 of 489: running sparse matrix-vector multiply benchmark for original/Kamvar/Stanford.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Kamvar/Stanford-stderr.txt for results
+109 of 489: running sparse matrix-vector multiply benchmark for original/Kamvar/Stanford_Berkeley.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Kamvar/Stanford_Berkeley-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Tromble
+110 of 489: running sparse matrix-vector multiply benchmark for original/Tromble/language.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Tromble/language-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Hamrle
+111 of 489: running sparse matrix-vector multiply benchmark for original/Hamrle/Hamrle3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Hamrle/Hamrle3-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach
+112 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/gyro_k.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/gyro_k-stderr.txt for results
+113 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/t3dh_a.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/t3dh_a-stderr.txt for results
+114 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/t3dh_e.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/t3dh_e-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Lin
+115 of 489: running sparse matrix-vector multiply benchmark for original/Lin/Lin.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Lin/Lin-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef
+116 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/bmw3_2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/bmw3_2-stderr.txt for results
+117 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/d_pretok.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/d_pretok-stderr.txt for results
+118 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/darcy003.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/darcy003-stderr.txt for results
+119 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/dawson5.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/dawson5-stderr.txt for results
+120 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/exdata_1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/exdata_1-stderr.txt for results
+121 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/helm2d03.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/helm2d03-stderr.txt for results
+122 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/mario002.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/mario002-stderr.txt for results
+123 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/turon_m.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/turon_m-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef
+124 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/audikw_1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/audikw_1-stderr.txt for results
+125 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/bmw7st_1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/bmw7st_1-stderr.txt for results
+126 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/bmwcra_1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/bmwcra_1-stderr.txt for results
+127 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/crankseg_1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/crankseg_1-stderr.txt for results
+128 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/crankseg_2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/crankseg_2-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS
+129 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/fcondp2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/fcondp2-stderr.txt for results
+130 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/fullb.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/fullb-stderr.txt for results
+131 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/halfb.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/halfb-stderr.txt for results
+132 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/hood.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/hood-stderr.txt for results
+133 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/inline_1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/inline_1-stderr.txt for results
+134 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/ldoor.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/ldoor-stderr.txt for results
+135 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/m_t1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/m_t1-stderr.txt for results
+136 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/oilpan.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/oilpan-stderr.txt for results
+137 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/opt1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/opt1-stderr.txt for results
+138 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/ramage02.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/ramage02-stderr.txt for results
+139 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/s3dkq4m2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/s3dkq4m2-stderr.txt for results
+140 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/s3dkt3m2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/s3dkt3m2-stderr.txt for results
+141 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/ship_001.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/ship_001-stderr.txt for results
+142 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/ship_003.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/ship_003-stderr.txt for results
+143 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/shipsec1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/shipsec1-stderr.txt for results
+144 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/shipsec5.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/shipsec5-stderr.txt for results
+145 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/shipsec8.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/shipsec8-stderr.txt for results
+146 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/srb1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/srb1-stderr.txt for results
+147 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/thread.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/thread-stderr.txt for results
+148 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/trdheim.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/trdheim-stderr.txt for results
+149 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/troll.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/troll-stderr.txt for results
+150 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/tsyl201.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/tsyl201-stderr.txt for results
+151 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/vanbody.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/vanbody-stderr.txt for results
+152 of 489: running sparse matrix-vector multiply benchmark for original/DNVS/x104.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DNVS/x104-stderr.txt for results
+153 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/boyd1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/boyd1-stderr.txt for results
+154 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/boyd2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/boyd2-stderr.txt for results
+155 of 489: running sparse matrix-vector multiply benchmark for original/GHS_indef/sparsine.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_indef/sparsine-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VanVelzen
+156 of 489: running sparse matrix-vector multiply benchmark for original/VanVelzen/std1_Jac2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VanVelzen/std1_Jac2-stderr.txt for results
+157 of 489: running sparse matrix-vector multiply benchmark for original/VanVelzen/std1_Jac3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VanVelzen/std1_Jac3-stderr.txt for results
+158 of 489: running sparse matrix-vector multiply benchmark for original/VanVelzen/Zd_Jac2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VanVelzen/Zd_Jac2-stderr.txt for results
+159 of 489: running sparse matrix-vector multiply benchmark for original/VanVelzen/Zd_Jac3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VanVelzen/Zd_Jac3-stderr.txt for results
+160 of 489: running sparse matrix-vector multiply benchmark for original/VanVelzen/Zd_Jac6.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VanVelzen/Zd_Jac6-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC
+161 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/CO.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/CO-stderr.txt for results
+162 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Ga10As10H30.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Ga10As10H30-stderr.txt for results
+163 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Ga19As19H42.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Ga19As19H42-stderr.txt for results
+164 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Ga3As3H12.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Ga3As3H12-stderr.txt for results
+165 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Ga41As41H72.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Ga41As41H72-stderr.txt for results
+166 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/GaAsH6.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/GaAsH6-stderr.txt for results
+167 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Ge87H76.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Ge87H76-stderr.txt for results
+168 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Ge99H100.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Ge99H100-stderr.txt for results
+169 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/H2O.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/H2O-stderr.txt for results
+170 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Si34H36.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Si34H36-stderr.txt for results
+171 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Si41Ge41H72.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Si41Ge41H72-stderr.txt for results
+172 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/Si87H76.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/Si87H76-stderr.txt for results
+173 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/SiO2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/SiO2-stderr.txt for results
+174 of 489: running sparse matrix-vector multiply benchmark for original/PARSEC/SiO.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/PARSEC/SiO-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rajat
+175 of 489: running sparse matrix-vector multiply benchmark for original/Rajat/rajat21.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rajat/rajat21-stderr.txt for results
+176 of 489: running sparse matrix-vector multiply benchmark for original/Rajat/rajat24.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rajat/rajat24-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov
+177 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/ins2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/ins2-stderr.txt for results
+178 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/lp1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/lp1-stderr.txt for results
+179 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/mip1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/mip1-stderr.txt for results
+180 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/net100.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/net100-stderr.txt for results
+181 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/net125.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/net125-stderr.txt for results
+182 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/net150.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/net150-stderr.txt for results
+183 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/net4-1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/net4-1-stderr.txt for results
+184 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/net75.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/net75-stderr.txt for results
+185 of 489: running sparse matrix-vector multiply benchmark for original/Andrianov/pattern1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Andrianov/pattern1-stderr.txt for results
+186 of 489: running sparse matrix-vector multiply benchmark for original/Rajat/rajat29.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rajat/rajat29-stderr.txt for results
+187 of 489: running sparse matrix-vector multiply benchmark for original/Rajat/rajat30.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rajat/rajat30-stderr.txt for results
+188 of 489: running sparse matrix-vector multiply benchmark for original/Rajat/rajat31.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rajat/rajat31-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Raju
+189 of 489: running sparse matrix-vector multiply benchmark for original/Raju/laminar_duct3D.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Raju/laminar_duct3D-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schmid
+190 of 489: running sparse matrix-vector multiply benchmark for original/Schmid/thermal2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schmid/thermal2-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Koutsovasilis
+191 of 489: running sparse matrix-vector multiply benchmark for original/Koutsovasilis/F1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Koutsovasilis/F1-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Sandia
+192 of 489: running sparse matrix-vector multiply benchmark for original/Sandia/ASIC_320k.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Sandia/ASIC_320k-stderr.txt for results
+193 of 489: running sparse matrix-vector multiply benchmark for original/Sandia/ASIC_320ks.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Sandia/ASIC_320ks-stderr.txt for results
+194 of 489: running sparse matrix-vector multiply benchmark for original/Sandia/ASIC_680k.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Sandia/ASIC_680k-stderr.txt for results
+195 of 489: running sparse matrix-vector multiply benchmark for original/Sandia/ASIC_680ks.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Sandia/ASIC_680ks-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/AMD
+196 of 489: running sparse matrix-vector multiply benchmark for original/AMD/G3_circuit.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/AMD/G3_circuit-stderr.txt for results
+197 of 489: running sparse matrix-vector multiply benchmark for original/GHS_psdef/apache2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GHS_psdef/apache2-stderr.txt for results
+198 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/filter3D.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/filter3D-stderr.txt for results
+199 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/gas_sensor.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/gas_sensor-stderr.txt for results
+200 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/gyro.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/gyro-stderr.txt for results
+201 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/t3dh.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/t3dh-stderr.txt for results
+202 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/bone010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/bone010-stderr.txt for results
+203 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/boneS01.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/boneS01-stderr.txt for results
+204 of 489: running sparse matrix-vector multiply benchmark for original/Oberwolfach/boneS10.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Oberwolfach/boneS10-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Pajek
+205 of 489: running sparse matrix-vector multiply benchmark for original/Pajek/patents.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Pajek/patents-stderr.txt for results
+206 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_IBMNA/c-big.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_IBMNA/c-big-stderr.txt for results
+207 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_0_k101.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_0_k101-stderr.txt for results
+208 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_1_k101.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_1_k101-stderr.txt for results
+209 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_2_k101.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_2_k101-stderr.txt for results
+210 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_3_k101.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_3_k101-stderr.txt for results
+211 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_4_k101.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_4_k101-stderr.txt for results
+212 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_5_k101.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_5_k101-stderr.txt for results
+213 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_AFE/af_shell10.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_AFE/af_shell10-stderr.txt for results
+214 of 489: running sparse matrix-vector multiply benchmark for original/Schenk_IBMNA/c-73b.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk_IBMNA/c-73b-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/POLYFLOW
+215 of 489: running sparse matrix-vector multiply benchmark for original/POLYFLOW/invextr1_new.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/POLYFLOW/invextr1_new-stderr.txt for results
+216 of 489: running sparse matrix-vector multiply benchmark for original/POLYFLOW/mixtank_new.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/POLYFLOW/mixtank_new-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/INPRO
+217 of 489: running sparse matrix-vector multiply benchmark for original/INPRO/msdoor.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/INPRO/msdoor-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gleich
+218 of 489: running sparse matrix-vector multiply benchmark for original/Gleich/wb-edu.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gleich/wb-edu-stderr.txt for results
+219 of 489: running sparse matrix-vector multiply benchmark for original/Gleich/wikipedia-20051105.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gleich/wikipedia-20051105-stderr.txt for results
+220 of 489: running sparse matrix-vector multiply benchmark for original/Gleich/wikipedia-20060925.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gleich/wikipedia-20060925-stderr.txt for results
+221 of 489: running sparse matrix-vector multiply benchmark for original/Gleich/wikipedia-20061104.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gleich/wikipedia-20061104-stderr.txt for results
+222 of 489: running sparse matrix-vector multiply benchmark for original/Gleich/wikipedia-20070206.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gleich/wikipedia-20070206-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/UTEP
+223 of 489: running sparse matrix-vector multiply benchmark for original/UTEP/Dubcova2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/UTEP/Dubcova2-stderr.txt for results
+224 of 489: running sparse matrix-vector multiply benchmark for original/UTEP/Dubcova3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/UTEP/Dubcova3-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/BenElechi
+225 of 489: running sparse matrix-vector multiply benchmark for original/BenElechi/BenElechi1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/BenElechi/BenElechi1-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Botonakis
+226 of 489: running sparse matrix-vector multiply benchmark for original/Botonakis/FEM_3D_thermal2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Botonakis/FEM_3D_thermal2-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Wissgott
+227 of 489: running sparse matrix-vector multiply benchmark for original/Wissgott/parabolic_fem.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Wissgott/parabolic_fem-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/QLi
+228 of 489: running sparse matrix-vector multiply benchmark for original/QLi/crashbasis.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/QLi/crashbasis-stderr.txt for results
+229 of 489: running sparse matrix-vector multiply benchmark for original/QLi/majorbasis.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/QLi/majorbasis-stderr.txt for results
+230 of 489: running sparse matrix-vector multiply benchmark for original/Koutsovasilis/F2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Koutsovasilis/F2-stderr.txt for results
+231 of 489: running sparse matrix-vector multiply benchmark for original/Rajat/Raj1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rajat/Raj1-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Muite
+232 of 489: running sparse matrix-vector multiply benchmark for original/Muite/Chebyshev4.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Muite/Chebyshev4-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/HVDC
+233 of 489: running sparse matrix-vector multiply benchmark for original/HVDC/hvdc2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/HVDC/hvdc2-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Zaoui
+234 of 489: running sparse matrix-vector multiply benchmark for original/Zaoui/kkt_power.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Zaoui/kkt_power-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mancktelow
+235 of 489: running sparse matrix-vector multiply benchmark for original/Mancktelow/viscorocks.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mancktelow/viscorocks-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rudnyi
+236 of 489: running sparse matrix-vector multiply benchmark for original/Rudnyi/water_tank.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Rudnyi/water_tank-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/McRae
+237 of 489: running sparse matrix-vector multiply benchmark for original/McRae/ecology1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/McRae/ecology1-stderr.txt for results
+238 of 489: running sparse matrix-vector multiply benchmark for original/McRae/ecology2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/McRae/ecology2-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Castrillon
+239 of 489: running sparse matrix-vector multiply benchmark for original/Castrillon/denormal.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Castrillon/denormal-stderr.txt for results
+240 of 489: running sparse matrix-vector multiply benchmark for original/QLi/largebasis.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/QLi/largebasis-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/CEMW
+241 of 489: running sparse matrix-vector multiply benchmark for original/CEMW/t2em.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/CEMW/t2em-stderr.txt for results
+242 of 489: running sparse matrix-vector multiply benchmark for original/CEMW/tmt_unsym.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/CEMW/tmt_unsym-stderr.txt for results
+243 of 489: running sparse matrix-vector multiply benchmark for original/CEMW/tmt_sym.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/CEMW/tmt_sym-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk
+244 of 489: running sparse matrix-vector multiply benchmark for original/Schenk/nlpkkt80.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk/nlpkkt80-stderr.txt for results
+245 of 489: running sparse matrix-vector multiply benchmark for original/Schenk/nlpkkt120.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk/nlpkkt120-stderr.txt for results
+246 of 489: running sparse matrix-vector multiply benchmark for original/Schenk/nlpkkt160.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk/nlpkkt160-stderr.txt for results
+247 of 489: running sparse matrix-vector multiply benchmark for original/Schenk/nlpkkt200.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk/nlpkkt200-stderr.txt for results
+248 of 489: running sparse matrix-vector multiply benchmark for original/Schenk/nlpkkt240.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Schenk/nlpkkt240-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TKK
+249 of 489: running sparse matrix-vector multiply benchmark for original/TKK/s4dkt3m2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TKK/s4dkt3m2-stderr.txt for results
+250 of 489: running sparse matrix-vector multiply benchmark for original/TKK/smt.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TKK/smt-stderr.txt for results
+251 of 489: running sparse matrix-vector multiply benchmark for original/TKK/engine.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TKK/engine-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Um
+252 of 489: running sparse matrix-vector multiply benchmark for original/Um/2cubes_sphere.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Um/2cubes_sphere-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/QY
+253 of 489: running sparse matrix-vector multiply benchmark for original/QY/case39.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/QY/case39-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Freescale
+254 of 489: running sparse matrix-vector multiply benchmark for original/Freescale/Freescale1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Freescale/Freescale1-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF
+255 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b2383.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b2383-stderr.txt for results
+256 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_FS_b300.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_FS_b300-stderr.txt for results
+257 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_FS_b162_c3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_FS_b162_c3-stderr.txt for results
+258 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_FS_b162_c4.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_FS_b162_c4-stderr.txt for results
+259 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_FS_b300_c1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_FS_b300_c1-stderr.txt for results
+260 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_FS_b300_c2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_FS_b300_c2-stderr.txt for results
+261 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_FS_b300_c3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_FS_b300_c3-stderr.txt for results
+262 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_FS_b39_c19.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_FS_b39_c19-stderr.txt for results
+263 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_FS_b39_c30.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_FS_b39_c30-stderr.txt for results
+264 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b2052_c1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b2052_c1-stderr.txt for results
+265 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b2383_c1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b2383_c1-stderr.txt for results
+266 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b300_c1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b300_c1-stderr.txt for results
+267 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b300_c2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b300_c2-stderr.txt for results
+268 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b300_c3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b300_c3-stderr.txt for results
+269 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b39_c30.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b39_c30-stderr.txt for results
+270 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b678_c1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b678_c1-stderr.txt for results
+271 of 489: running sparse matrix-vector multiply benchmark for original/TSOPF/TSOPF_RS_b678_c2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/TSOPF/TSOPF_RS_b678_c2-stderr.txt for results
+272 of 489: running sparse matrix-vector multiply benchmark for original/Botonakis/thermomech_dM.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Botonakis/thermomech_dM-stderr.txt for results
+273 of 489: running sparse matrix-vector multiply benchmark for original/Botonakis/thermomech_dK.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Botonakis/thermomech_dK-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bourchtein
+274 of 489: running sparse matrix-vector multiply benchmark for original/Bourchtein/atmosmodd.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bourchtein/atmosmodd-stderr.txt for results
+275 of 489: running sparse matrix-vector multiply benchmark for original/Bourchtein/atmosmodj.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bourchtein/atmosmodj-stderr.txt for results
+276 of 489: running sparse matrix-vector multiply benchmark for original/Bourchtein/atmosmodl.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bourchtein/atmosmodl-stderr.txt for results
+277 of 489: running sparse matrix-vector multiply benchmark for original/Bourchtein/atmosmodm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bourchtein/atmosmodm-stderr.txt for results
+278 of 489: running sparse matrix-vector multiply benchmark for original/Freescale/memchip.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Freescale/memchip-stderr.txt for results
+279 of 489: running sparse matrix-vector multiply benchmark for original/Freescale/circuit5M.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Freescale/circuit5M-stderr.txt for results
+280 of 489: running sparse matrix-vector multiply benchmark for original/Freescale/circuit5M_dc.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Freescale/circuit5M_dc-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Belcastro
+281 of 489: running sparse matrix-vector multiply benchmark for original/Belcastro/human_gene1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Belcastro/human_gene1-stderr.txt for results
+282 of 489: running sparse matrix-vector multiply benchmark for original/Belcastro/human_gene2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Belcastro/human_gene2-stderr.txt for results
+283 of 489: running sparse matrix-vector multiply benchmark for original/Belcastro/mouse_gene.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Belcastro/mouse_gene-stderr.txt for results
+284 of 489: running sparse matrix-vector multiply benchmark for original/Um/offshore.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Um/offshore-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP
+285 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/soc-LiveJournal1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/soc-LiveJournal1-stderr.txt for results
+286 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/wiki-Talk.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/wiki-Talk-stderr.txt for results
+287 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/cit-Patents.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/cit-Patents-stderr.txt for results
+288 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/web-BerkStan.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/web-BerkStan-stderr.txt for results
+289 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/web-Google.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/web-Google-stderr.txt for results
+290 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/web-NotreDame.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/web-NotreDame-stderr.txt for results
+291 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/web-Stanford.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/web-Stanford-stderr.txt for results
+292 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/amazon0302.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/amazon0302-stderr.txt for results
+293 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/amazon0312.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/amazon0312-stderr.txt for results
+294 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/amazon0505.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/amazon0505-stderr.txt for results
+295 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/amazon0601.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/amazon0601-stderr.txt for results
+296 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/roadNet-CA.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/roadNet-CA-stderr.txt for results
+297 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/roadNet-PA.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/roadNet-PA-stderr.txt for results
+298 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/roadNet-TX.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/roadNet-TX-stderr.txt for results
+299 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/as-Skitter.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/as-Skitter-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Dziekonski
+300 of 489: running sparse matrix-vector multiply benchmark for original/Dziekonski/gsm_106857.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Dziekonski/gsm_106857-stderr.txt for results
+301 of 489: running sparse matrix-vector multiply benchmark for original/Gleich/flickr.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Gleich/flickr-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Fluorem
+302 of 489: running sparse matrix-vector multiply benchmark for original/Fluorem/PR02R.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Fluorem/PR02R-stderr.txt for results
+303 of 489: running sparse matrix-vector multiply benchmark for original/Fluorem/RM07R.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Fluorem/RM07R-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Williams
+304 of 489: running sparse matrix-vector multiply benchmark for original/Williams/pdb1HYS.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Williams/pdb1HYS-stderr.txt for results
+305 of 489: running sparse matrix-vector multiply benchmark for original/Williams/consph.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Williams/consph-stderr.txt for results
+306 of 489: running sparse matrix-vector multiply benchmark for original/Williams/cant.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Williams/cant-stderr.txt for results
+307 of 489: running sparse matrix-vector multiply benchmark for original/Williams/mac_econ_fwd500.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Williams/mac_econ_fwd500-stderr.txt for results
+308 of 489: running sparse matrix-vector multiply benchmark for original/Williams/mc2depi.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Williams/mc2depi-stderr.txt for results
+309 of 489: running sparse matrix-vector multiply benchmark for original/Williams/cop20k_A.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Williams/cop20k_A-stderr.txt for results
+310 of 489: running sparse matrix-vector multiply benchmark for original/Williams/webbase-1M.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Williams/webbase-1M-stderr.txt for results
+311 of 489: running sparse matrix-vector multiply benchmark for original/Freescale/FullChip.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Freescale/FullChip-stderr.txt for results
+312 of 489: running sparse matrix-vector multiply benchmark for original/Fluorem/HV15R.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Fluorem/HV15R-stderr.txt for results
+313 of 489: running sparse matrix-vector multiply benchmark for original/Dziekonski/dielFilterV2real.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Dziekonski/dielFilterV2real-stderr.txt for results
+314 of 489: running sparse matrix-vector multiply benchmark for original/Dziekonski/dielFilterV3real.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Dziekonski/dielFilterV3real-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/AG-Monien
+315 of 489: running sparse matrix-vector multiply benchmark for original/AG-Monien/wave.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/AG-Monien/wave-stderr.txt for results
+316 of 489: running sparse matrix-vector multiply benchmark for original/AG-Monien/debr.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/AG-Monien/debr-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW
+317 of 489: running sparse matrix-vector multiply benchmark for original/LAW/cnr-2000.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/cnr-2000-stderr.txt for results
+318 of 489: running sparse matrix-vector multiply benchmark for original/LAW/in-2004.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/in-2004-stderr.txt for results
+319 of 489: running sparse matrix-vector multiply benchmark for original/LAW/eu-2005.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/eu-2005-stderr.txt for results
+320 of 489: running sparse matrix-vector multiply benchmark for original/LAW/amazon-2008.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/amazon-2008-stderr.txt for results
+321 of 489: running sparse matrix-vector multiply benchmark for original/LAW/ljournal-2008.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/ljournal-2008-stderr.txt for results
+322 of 489: running sparse matrix-vector multiply benchmark for original/LAW/hollywood-2009.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/hollywood-2009-stderr.txt for results
+323 of 489: running sparse matrix-vector multiply benchmark for original/LAW/dblp-2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/dblp-2010-stderr.txt for results
+324 of 489: running sparse matrix-vector multiply benchmark for original/LAW/uk-2002.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/uk-2002-stderr.txt for results
+325 of 489: running sparse matrix-vector multiply benchmark for original/LAW/indochina-2004.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/indochina-2004-stderr.txt for results
+326 of 489: running sparse matrix-vector multiply benchmark for original/LAW/arabic-2005.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/LAW/arabic-2005-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10
+327 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/caidaRouterLevel.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/caidaRouterLevel-stderr.txt for results
+328 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/road_central.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/road_central-stderr.txt for results
+329 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/road_usa.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/road_usa-stderr.txt for results
+330 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/citationCiteseer.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/citationCiteseer-stderr.txt for results
+331 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/coAuthorsCiteseer.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/coAuthorsCiteseer-stderr.txt for results
+332 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/coAuthorsDBLP.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/coAuthorsDBLP-stderr.txt for results
+333 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/coPapersCiteseer.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/coPapersCiteseer-stderr.txt for results
+334 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/coPapersDBLP.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/coPapersDBLP-stderr.txt for results
+335 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/delaunay_n18.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/delaunay_n18-stderr.txt for results
+336 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/delaunay_n19.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/delaunay_n19-stderr.txt for results
+337 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/delaunay_n20.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/delaunay_n20-stderr.txt for results
+338 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/delaunay_n21.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/delaunay_n21-stderr.txt for results
+339 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/delaunay_n22.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/delaunay_n22-stderr.txt for results
+340 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/delaunay_n23.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/delaunay_n23-stderr.txt for results
+341 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/delaunay_n24.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/delaunay_n24-stderr.txt for results
+342 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugebubbles-00000.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugebubbles-00000-stderr.txt for results
+343 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugebubbles-00010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugebubbles-00010-stderr.txt for results
+344 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugebubbles-00020.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugebubbles-00020-stderr.txt for results
+345 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugetrace-00000.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugetrace-00000-stderr.txt for results
+346 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugetrace-00010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugetrace-00010-stderr.txt for results
+347 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugetrace-00020.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugetrace-00020-stderr.txt for results
+348 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugetric-00000.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugetric-00000-stderr.txt for results
+349 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugetric-00010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugetric-00010-stderr.txt for results
+350 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/hugetric-00020.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/hugetric-00020-stderr.txt for results
+351 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/kron_g500-logn16.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/kron_g500-logn16-stderr.txt for results
+352 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/kron_g500-logn17.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/kron_g500-logn17-stderr.txt for results
+353 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/kron_g500-logn18.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/kron_g500-logn18-stderr.txt for results
+354 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/kron_g500-logn19.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/kron_g500-logn19-stderr.txt for results
+355 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/kron_g500-logn20.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/kron_g500-logn20-stderr.txt for results
+356 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/kron_g500-logn21.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/kron_g500-logn21-stderr.txt for results
+357 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/adaptive.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/adaptive-stderr.txt for results
+358 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/channel-500x100x100-b050.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/channel-500x100x100-b050-stderr.txt for results
+359 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/packing-500x100x100-b050.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/packing-500x100x100-b050-stderr.txt for results
+360 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/venturiLevel3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/venturiLevel3-stderr.txt for results
+361 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/rgg_n_2_17_s0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/rgg_n_2_17_s0-stderr.txt for results
+362 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/rgg_n_2_18_s0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/rgg_n_2_18_s0-stderr.txt for results
+363 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/rgg_n_2_19_s0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/rgg_n_2_19_s0-stderr.txt for results
+364 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/rgg_n_2_20_s0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/rgg_n_2_20_s0-stderr.txt for results
+365 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/rgg_n_2_21_s0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/rgg_n_2_21_s0-stderr.txt for results
+366 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/rgg_n_2_22_s0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/rgg_n_2_22_s0-stderr.txt for results
+367 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/rgg_n_2_23_s0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/rgg_n_2_23_s0-stderr.txt for results
+368 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/rgg_n_2_24_s0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/rgg_n_2_24_s0-stderr.txt for results
+369 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/asia_osm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/asia_osm-stderr.txt for results
+370 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/belgium_osm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/belgium_osm-stderr.txt for results
+371 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/europe_osm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/europe_osm-stderr.txt for results
+372 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/germany_osm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/germany_osm-stderr.txt for results
+373 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/great-britain_osm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/great-britain_osm-stderr.txt for results
+374 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/italy_osm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/italy_osm-stderr.txt for results
+375 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/netherlands_osm.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/netherlands_osm-stderr.txt for results
+376 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/144.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/144-stderr.txt for results
+377 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/598a.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/598a-stderr.txt for results
+378 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/auto.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/auto-stderr.txt for results
+379 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/fe_rotor.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/fe_rotor-stderr.txt for results
+380 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/m14b.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/m14b-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/IPSO
+381 of 489: running sparse matrix-vector multiply benchmark for original/IPSO/TSC_OPF_1047.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/IPSO/TSC_OPF_1047-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna
+382 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Serena.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Serena-stderr.txt for results
+383 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Emilia_923.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Emilia_923-stderr.txt for results
+384 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Fault_639.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Fault_639-stderr.txt for results
+385 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Flan_1565.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Flan_1565-stderr.txt for results
+386 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Geo_1438.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Geo_1438-stderr.txt for results
+387 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Hook_1498.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Hook_1498-stderr.txt for results
+388 of 489: running sparse matrix-vector multiply benchmark for original/Janna/StocF-1465.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/StocF-1465-stderr.txt for results
+389 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Cube_Coup_dt0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Cube_Coup_dt0-stderr.txt for results
+390 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Cube_Coup_dt6.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Cube_Coup_dt6-stderr.txt for results
+391 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Long_Coup_dt0.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Long_Coup_dt0-stderr.txt for results
+392 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Long_Coup_dt6.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Long_Coup_dt6-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bodendiek
+393 of 489: running sparse matrix-vector multiply benchmark for original/Bodendiek/CurlCurl_1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bodendiek/CurlCurl_1-stderr.txt for results
+394 of 489: running sparse matrix-vector multiply benchmark for original/Bodendiek/CurlCurl_2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bodendiek/CurlCurl_2-stderr.txt for results
+395 of 489: running sparse matrix-vector multiply benchmark for original/Bodendiek/CurlCurl_3.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bodendiek/CurlCurl_3-stderr.txt for results
+396 of 489: running sparse matrix-vector multiply benchmark for original/Bodendiek/CurlCurl_4.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Bodendiek/CurlCurl_4-stderr.txt for results
+397 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/G_n_pin_pout.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/G_n_pin_pout-stderr.txt for results
+398 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/333SP.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/333SP-stderr.txt for results
+399 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/AS365.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/AS365-stderr.txt for results
+400 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/M6.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/M6-stderr.txt for results
+401 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/NACA0015.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/NACA0015-stderr.txt for results
+402 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/NLR.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/NLR-stderr.txt for results
+403 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/al2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/al2010-stderr.txt for results
+404 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/az2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/az2010-stderr.txt for results
+405 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/ca2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/ca2010-stderr.txt for results
+406 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/fl2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/fl2010-stderr.txt for results
+407 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/ga2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/ga2010-stderr.txt for results
+408 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/ia2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/ia2010-stderr.txt for results
+409 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/il2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/il2010-stderr.txt for results
+410 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/in2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/in2010-stderr.txt for results
+411 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/ks2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/ks2010-stderr.txt for results
+412 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/mi2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/mi2010-stderr.txt for results
+413 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/mn2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/mn2010-stderr.txt for results
+414 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/mo2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/mo2010-stderr.txt for results
+415 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/nc2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/nc2010-stderr.txt for results
+416 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/ny2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/ny2010-stderr.txt for results
+417 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/oh2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/oh2010-stderr.txt for results
+418 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/ok2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/ok2010-stderr.txt for results
+419 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/pa2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/pa2010-stderr.txt for results
+420 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/tn2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/tn2010-stderr.txt for results
+421 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/tx2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/tx2010-stderr.txt for results
+422 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/va2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/va2010-stderr.txt for results
+423 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/wi2010.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/wi2010-stderr.txt for results
+424 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/vsp_bcsstk30_500sep_10in_1Kout.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/vsp_bcsstk30_500sep_10in_1Kout-stderr.txt for results
+425 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/vsp_finan512_scagr7-2c_rlfddd.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/vsp_finan512_scagr7-2c_rlfddd-stderr.txt for results
+426 of 489: running sparse matrix-vector multiply benchmark for original/DIMACS10/vsp_msc10848_300sep_100in_1Kout.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/DIMACS10/vsp_msc10848_300sep_100in_1Kout-stderr.txt for results
+427 of 489: running sparse matrix-vector multiply benchmark for original/Janna/CoupCons3D.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/CoupCons3D-stderr.txt for results
+428 of 489: running sparse matrix-vector multiply benchmark for original/Janna/ML_Laplace.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/ML_Laplace-stderr.txt for results
+429 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Transport.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Transport-stderr.txt for results
+430 of 489: running sparse matrix-vector multiply benchmark for original/Janna/ML_Geer.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/ML_Geer-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Sorensen
+431 of 489: running sparse matrix-vector multiply benchmark for original/Sorensen/Linux_call_graph.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Sorensen/Linux_call_graph-stderr.txt for results
+432 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Bump_2911.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Bump_2911-stderr.txt for results
+433 of 489: running sparse matrix-vector multiply benchmark for original/Janna/Queen_4147.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/Queen_4147-stderr.txt for results
+434 of 489: running sparse matrix-vector multiply benchmark for original/Janna/PFlow_742.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Janna/PFlow_742-stderr.txt for results
+435 of 489: running sparse matrix-vector multiply benchmark for original/Freescale/Freescale2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Freescale/Freescale2-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mazaheri
+436 of 489: running sparse matrix-vector multiply benchmark for original/Mazaheri/bundle_adj.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mazaheri/bundle_adj-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mycielski
+437 of 489: running sparse matrix-vector multiply benchmark for original/Mycielski/mycielskian13.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mycielski/mycielskian13-stderr.txt for results
+438 of 489: running sparse matrix-vector multiply benchmark for original/Mycielski/mycielskian14.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mycielski/mycielskian14-stderr.txt for results
+439 of 489: running sparse matrix-vector multiply benchmark for original/Mycielski/mycielskian15.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mycielski/mycielskian15-stderr.txt for results
+440 of 489: running sparse matrix-vector multiply benchmark for original/Mycielski/mycielskian16.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mycielski/mycielskian16-stderr.txt for results
+441 of 489: running sparse matrix-vector multiply benchmark for original/Mycielski/mycielskian17.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mycielski/mycielskian17-stderr.txt for results
+442 of 489: running sparse matrix-vector multiply benchmark for original/Mycielski/mycielskian18.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mycielski/mycielskian18-stderr.txt for results
+443 of 489: running sparse matrix-vector multiply benchmark for original/Mycielski/mycielskian19.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Mycielski/mycielskian19-stderr.txt for results
+444 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/com-Amazon.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/com-Amazon-stderr.txt for results
+445 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/com-DBLP.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/com-DBLP-stderr.txt for results
+446 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/com-LiveJournal.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/com-LiveJournal-stderr.txt for results
+447 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/com-Orkut.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/com-Orkut-stderr.txt for results
+448 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/com-Youtube.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/com-Youtube-stderr.txt for results
+449 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/higgs-twitter.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/higgs-twitter-stderr.txt for results
+450 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/loc-Gowalla.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/loc-Gowalla-stderr.txt for results
+451 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/soc-Pokec.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/soc-Pokec-stderr.txt for results
+452 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/sx-stackoverflow.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/sx-stackoverflow-stderr.txt for results
+453 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/wiki-talk-temporal.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/wiki-talk-temporal-stderr.txt for results
+454 of 489: running sparse matrix-vector multiply benchmark for original/SNAP/wiki-topcats.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/SNAP/wiki-topcats-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/MAWI
+455 of 489: running sparse matrix-vector multiply benchmark for original/MAWI/mawi_201512012345.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/MAWI/mawi_201512012345-stderr.txt for results
+456 of 489: running sparse matrix-vector multiply benchmark for original/MAWI/mawi_201512020000.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/MAWI/mawi_201512020000-stderr.txt for results
+457 of 489: running sparse matrix-vector multiply benchmark for original/MAWI/mawi_201512020030.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/MAWI/mawi_201512020030-stderr.txt for results
+458 of 489: running sparse matrix-vector multiply benchmark for original/MAWI/mawi_201512020130.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/MAWI/mawi_201512020130-stderr.txt for results
+459 of 489: running sparse matrix-vector multiply benchmark for original/MAWI/mawi_201512020330.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/MAWI/mawi_201512020330-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GenBank
+460 of 489: running sparse matrix-vector multiply benchmark for original/GenBank/kmer_A2a.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GenBank/kmer_A2a-stderr.txt for results
+461 of 489: running sparse matrix-vector multiply benchmark for original/GenBank/kmer_P1a.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GenBank/kmer_P1a-stderr.txt for results
+462 of 489: running sparse matrix-vector multiply benchmark for original/GenBank/kmer_U1a.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GenBank/kmer_U1a-stderr.txt for results
+463 of 489: running sparse matrix-vector multiply benchmark for original/GenBank/kmer_V1r.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GenBank/kmer_V1r-stderr.txt for results
+464 of 489: running sparse matrix-vector multiply benchmark for original/GenBank/kmer_V2a.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GenBank/kmer_V2a-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Guettel
+465 of 489: running sparse matrix-vector multiply benchmark for original/Guettel/TEM152078.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Guettel/TEM152078-stderr.txt for results
+466 of 489: running sparse matrix-vector multiply benchmark for original/Guettel/TEM181302.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Guettel/TEM181302-stderr.txt for results
+467 of 489: running sparse matrix-vector multiply benchmark for original/Goodwin/Goodwin_054.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Goodwin/Goodwin_054-stderr.txt for results
+468 of 489: running sparse matrix-vector multiply benchmark for original/Goodwin/Goodwin_071.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Goodwin/Goodwin_071-stderr.txt for results
+469 of 489: running sparse matrix-vector multiply benchmark for original/Goodwin/Goodwin_095.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Goodwin/Goodwin_095-stderr.txt for results
+470 of 489: running sparse matrix-vector multiply benchmark for original/Goodwin/Goodwin_127.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Goodwin/Goodwin_127-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Embree
+471 of 489: running sparse matrix-vector multiply benchmark for original/Embree/ifiss_mat.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Embree/ifiss_mat-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Hardesty
+472 of 489: running sparse matrix-vector multiply benchmark for original/Hardesty/Hardesty1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Hardesty/Hardesty1-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI
+473 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/nv1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/nv1-stderr.txt for results
+474 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/nv2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/nv2-stderr.txt for results
+475 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/imagesensor.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/imagesensor-stderr.txt for results
+476 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/mosfet2.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/mosfet2-stderr.txt for results
+477 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/power9.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/power9-stderr.txt for results
+478 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/radiation.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/radiation-stderr.txt for results
+479 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/test1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/test1-stderr.txt for results
+480 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/dgreen.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/dgreen-stderr.txt for results
+481 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/vas_stokes_1M.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/vas_stokes_1M-stderr.txt for results
+482 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/vas_stokes_2M.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/vas_stokes_2M-stderr.txt for results
+483 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/vas_stokes_4M.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/vas_stokes_4M-stderr.txt for results
+484 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/stokes.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/stokes-stderr.txt for results
+485 of 489: running sparse matrix-vector multiply benchmark for original/VLSI/ss.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/VLSI/ss-stderr.txt for results
+486 of 489: running sparse matrix-vector multiply benchmark for original/Freescale/nxp1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Freescale/nxp1-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Martin
+487 of 489: running sparse matrix-vector multiply benchmark for original/Martin/marine1.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Martin/marine1-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Precima
+488 of 489: running sparse matrix-vector multiply benchmark for original/Precima/analytics.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/Precima/analytics-stderr.txt for results
+creating directory results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GAP
+489 of 489: running sparse matrix-vector multiply benchmark for original/GAP/GAP-road.mtx.gz; see results/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505/GAP/GAP-road-stderr.txt for results

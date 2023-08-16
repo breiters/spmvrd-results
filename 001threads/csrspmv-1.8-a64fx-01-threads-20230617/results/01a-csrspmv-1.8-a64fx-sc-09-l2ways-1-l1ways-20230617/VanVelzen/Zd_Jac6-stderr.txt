@@ -1,0 +1,133 @@
+
+OPENMP DISPLAY ENVIRONMENT BEGIN
+   _OPENMP='201611'
+  [host] OMP_CANCELLATION='FALSE'
+  [host] OMP_DEFAULT_DEVICE='0'
+  [host] OMP_DISPLAY_ENV='TRUE'
+  [host] OMP_DYNAMIC='FALSE'
+  [host] OMP_MAX_ACTIVE_LEVELS='2147483647'
+  [host] OMP_MAX_TASK_PRIORITY='0'
+  [host] OMP_NESTED='FALSE'
+  [host] OMP_NUM_THREADS='1'
+  [host] OMP_PLACES='cores'
+  [host] OMP_PROC_BIND='close'
+  [host] OMP_SCHEDULE='static'
+  [host] OMP_STACKSIZE='8M'
+   OMP_TARGET_OFFLOAD=DEFAULT
+  [host] OMP_THREAD_LIMIT='2147483647'
+  [host] OMP_TOOL_LIBRARIES: value is not defined
+  [host] OMP_WAIT_POLICY='ACTIVE'
+OPENMP DISPLAY ENVIRONMENT END
+
+
+mtxfile_read: 1.916854 seconds (27.0 MB/s)
+csr_from_coo: 0.030835 seconds, 22835 rows, 22835 columns, 1711983 nonzeros, 1 to 1050 nonzeros per row, 1 threads, 22835 to 22835 rows per thread, 1711983 to 1711983 nonzeros per thread
+[PAPI util] using event file: share/papi_util_a64fx_memdp.txt
+enabling sector cache (9 L2 ways, 1 L1 ways)
+gemv (warmup): 0.001549 seconds (1.105 Gnz/s, 2.210 Gflop/s, 13.6 to 22.3 GB/s)
+gemv (warmup): 0.001453 seconds (1.178 Gnz/s, 2.357 Gflop/s, 14.5 to 23.8 GB/s)
+gemv (warmup): 0.001454 seconds (1.177 Gnz/s, 2.355 Gflop/s, 14.5 to 23.8 GB/s)
+[PAPI util] start recording events for region "gemv"
+gemv: 0.001458 seconds (1.174 Gnz/s, 2.348 Gflop/s, 14.5 to 23.7 GB/s)
+gemv: 0.001454 seconds (1.177 Gnz/s, 2.355 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.361 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001451 seconds (1.180 Gnz/s, 2.360 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001463 seconds (1.170 Gnz/s, 2.340 Gflop/s, 14.4 to 23.7 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.362 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001448 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.362 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001462 seconds (1.171 Gnz/s, 2.341 Gflop/s, 14.4 to 23.7 GB/s)
+gemv: 0.001453 seconds (1.178 Gnz/s, 2.357 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001448 seconds (1.183 Gnz/s, 2.365 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.359 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001451 seconds (1.179 Gnz/s, 2.359 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001457 seconds (1.175 Gnz/s, 2.350 Gflop/s, 14.5 to 23.7 GB/s)
+gemv: 0.001457 seconds (1.175 Gnz/s, 2.351 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001462 seconds (1.171 Gnz/s, 2.342 Gflop/s, 14.4 to 23.7 GB/s)
+gemv: 0.001446 seconds (1.184 Gnz/s, 2.367 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.181 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001448 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001450 seconds (1.180 Gnz/s, 2.361 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001466 seconds (1.168 Gnz/s, 2.336 Gflop/s, 14.4 to 23.6 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.181 Gnz/s, 2.362 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001450 seconds (1.180 Gnz/s, 2.361 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001449 seconds (1.181 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001464 seconds (1.170 Gnz/s, 2.339 Gflop/s, 14.4 to 23.6 GB/s)
+gemv: 0.001453 seconds (1.179 Gnz/s, 2.357 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001448 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001449 seconds (1.181 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001467 seconds (1.167 Gnz/s, 2.334 Gflop/s, 14.4 to 23.6 GB/s)
+gemv: 0.001451 seconds (1.180 Gnz/s, 2.360 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001453 seconds (1.178 Gnz/s, 2.356 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001455 seconds (1.177 Gnz/s, 2.353 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001451 seconds (1.180 Gnz/s, 2.360 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.361 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001448 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001463 seconds (1.170 Gnz/s, 2.340 Gflop/s, 14.4 to 23.7 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.361 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001454 seconds (1.178 Gnz/s, 2.356 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001453 seconds (1.178 Gnz/s, 2.357 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.362 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001465 seconds (1.169 Gnz/s, 2.337 Gflop/s, 14.4 to 23.6 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001456 seconds (1.175 Gnz/s, 2.351 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.362 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001451 seconds (1.180 Gnz/s, 2.360 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001455 seconds (1.176 Gnz/s, 2.353 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001461 seconds (1.172 Gnz/s, 2.343 Gflop/s, 14.4 to 23.7 GB/s)
+gemv: 0.001456 seconds (1.176 Gnz/s, 2.352 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001457 seconds (1.175 Gnz/s, 2.351 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.359 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001461 seconds (1.172 Gnz/s, 2.344 Gflop/s, 14.4 to 23.7 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.357 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.362 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001449 seconds (1.181 Gnz/s, 2.362 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001451 seconds (1.180 Gnz/s, 2.361 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001448 seconds (1.182 Gnz/s, 2.365 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001463 seconds (1.170 Gnz/s, 2.340 Gflop/s, 14.4 to 23.6 GB/s)
+gemv: 0.001448 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.359 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.181 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001467 seconds (1.167 Gnz/s, 2.334 Gflop/s, 14.4 to 23.6 GB/s)
+gemv: 0.001451 seconds (1.180 Gnz/s, 2.359 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001455 seconds (1.176 Gnz/s, 2.352 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.181 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001453 seconds (1.179 Gnz/s, 2.357 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.359 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001466 seconds (1.168 Gnz/s, 2.336 Gflop/s, 14.4 to 23.6 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.363 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001453 seconds (1.178 Gnz/s, 2.357 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001451 seconds (1.180 Gnz/s, 2.360 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001445 seconds (1.185 Gnz/s, 2.369 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001453 seconds (1.179 Gnz/s, 2.357 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001462 seconds (1.171 Gnz/s, 2.342 Gflop/s, 14.4 to 23.7 GB/s)
+gemv: 0.001455 seconds (1.176 Gnz/s, 2.353 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001448 seconds (1.183 Gnz/s, 2.365 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001448 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.359 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001449 seconds (1.182 Gnz/s, 2.364 Gflop/s, 14.6 to 23.9 GB/s)
+gemv: 0.001464 seconds (1.169 Gnz/s, 2.339 Gflop/s, 14.4 to 23.6 GB/s)
+gemv: 0.001454 seconds (1.177 Gnz/s, 2.355 Gflop/s, 14.5 to 23.8 GB/s)
+gemv: 0.001450 seconds (1.180 Gnz/s, 2.361 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001450 seconds (1.181 Gnz/s, 2.362 Gflop/s, 14.5 to 23.9 GB/s)
+gemv: 0.001452 seconds (1.179 Gnz/s, 2.358 Gflop/s, 14.5 to 23.8 GB/s)
+region,threads,EFFECTIVE_INST_SPEC,CPU_CYCLES,FP_DP_FIXED_OPS_SPEC,FP_DP_SCALE_OPS_SPEC,L2D_CACHE_REFILL,L2D_CACHE_WB,L2D_SWAP_DM,L2D_CACHE_MIBMCH_PRF,L1D_CACHE_REFILL,CPI ,Frequency ,L1D cache miss rate ,L2D cache miss rate ,L2-Memory Bandwidth ,DP (FP) ,DP (FP+SVE512) ,Computational Intensity (FP+SVE512) ,time
+gemv,0,209521049,339713611,2286806,111856400,8113268,1820,48958,14827,9796433,1.621382,2208.958476,0.046756,0.038418,13.402343,14.869759,2924.216160,0.218187,0.153789
+total,-1,209521049,339713611,2286806,111856400,8113268,1820,48958,14827,9796433,1.621382,2208.958476,0.046756,0.038418,13.402343,14.869759,2924.216160,0.218187,0.153789

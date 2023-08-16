@@ -1,0 +1,87 @@
+#!/usr/bin/env gnuplot
+# SparCity - A64FX Sector Cache
+#
+# Copyright (C) 2023 Simula Research Laboratory
+#
+# Authors: James D. Trotter <james@simula.no>
+#
+# Date: 2023-05-05
+
+set terminal pngcairo size 1024,1024
+set output '01a-csr-speedup-vs-scconfig.png'
+
+# set terminal epslatex size 8,8 standalone font 'phv,8pt' header "\\usepackage[cm]{sfmath}"
+# set output '01a-csr-speedup-vs-scconfig.tex'
+
+set title 'Distribution of speedups for 490 matrices with respect to CSR SpMV due to sector cache on Fujitsu A64FX'
+
+set key noautotitle horizontal top left
+# unset key
+
+set style fill solid 0.5 border -1
+# set style boxplot pointtype 7
+# set style boxplot fraction 1.0
+set style data boxplot
+set boxwidth 0.1
+set pointsize 0.5
+set errorbars 0.4
+
+# set border 2
+
+set xlabel 'L2 ways'
+set xtics 0,1 nomirror
+set xrange [1.5:12.5]
+
+# set ylabel 'performance [Gflop/s]'
+set ylabel 'speedup'
+set ytics nomirror
+# set logscale y
+# set yrange [0.1:10]
+
+# horizontal line for speedup=1
+set arrow from graph 0,first 1 to graph 1,first 1 nohead dashtype "."
+
+plot '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-02-l2ways-20230505.txt' using (2-0.15):($29/$12) linecolor '#d95f02' title 'L1 ways: none', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-03-l2ways-20230505.txt' using (3-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-04-l2ways-20230505.txt' using (4-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-05-l2ways-20230505.txt' using (5-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-06-l2ways-20230505.txt' using (6-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-07-l2ways-20230505.txt' using (7-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-08-l2ways-20230505.txt' using (8-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-09-l2ways-20230505.txt' using (9-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-10-l2ways-20230505.txt' using (10-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-11-l2ways-20230505.txt' using (11-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-12-l2ways-20230505.txt' using (12-0.15):($29/$12) linecolor '#d95f02', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-02-l2ways-1-l1ways-20230505.txt' using (2-0.05):($29/$12) linecolor '#7570b3' title 'L1 ways: 1', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-03-l2ways-1-l1ways-20230505.txt' using (3-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-04-l2ways-1-l1ways-20230505.txt' using (4-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-05-l2ways-1-l1ways-20230505.txt' using (5-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-06-l2ways-1-l1ways-20230505.txt' using (6-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-07-l2ways-1-l1ways-20230505.txt' using (7-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-08-l2ways-1-l1ways-20230505.txt' using (8-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-09-l2ways-1-l1ways-20230505.txt' using (9-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-10-l2ways-1-l1ways-20230505.txt' using (10-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-11-l2ways-1-l1ways-20230505.txt' using (11-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-12-l2ways-1-l1ways-20230505.txt' using (12-0.05):($29/$12) linecolor '#7570b3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-02-l2ways-2-l1ways-20230505.txt' using (2+0.05):($29/$12) linecolor '#e7298a' title 'L1 ways: 2', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-03-l2ways-2-l1ways-20230505.txt' using (3+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-04-l2ways-2-l1ways-20230505.txt' using (4+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-05-l2ways-2-l1ways-20230505.txt' using (5+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-06-l2ways-2-l1ways-20230505.txt' using (6+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-07-l2ways-2-l1ways-20230505.txt' using (7+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-08-l2ways-2-l1ways-20230505.txt' using (8+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-09-l2ways-2-l1ways-20230505.txt' using (9+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-10-l2ways-2-l1ways-20230505.txt' using (10+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-11-l2ways-2-l1ways-20230505.txt' using (11+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-12-l2ways-2-l1ways-20230505.txt' using (12+0.05):($29/$12) linecolor '#e7298a', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-02-l2ways-3-l1ways-20230505.txt' using (2+0.15):($29/$12) linecolor '#66a61e' title 'L1 ways: 3', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-03-l2ways-3-l1ways-20230505.txt' using (3+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-04-l2ways-3-l1ways-20230505.txt' using (4+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-05-l2ways-3-l1ways-20230505.txt' using (5+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-06-l2ways-3-l1ways-20230505.txt' using (6+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-07-l2ways-3-l1ways-20230505.txt' using (7+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-08-l2ways-3-l1ways-20230505.txt' using (8+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-09-l2ways-3-l1ways-20230505.txt' using (9+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-10-l2ways-3-l1ways-20230505.txt' using (10+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-11-l2ways-3-l1ways-20230505.txt' using (11+0.15):($29/$12) linecolor '#66a61e', \
+     '< paste ../summary/01a-csrspmv-1.6-a64fx-nosc-20230505.txt ../summary/01a-csrspmv-1.6-a64fx-sc-12-l2ways-3-l1ways-20230505.txt' using (12+0.15):($29/$12) linecolor '#66a61e'

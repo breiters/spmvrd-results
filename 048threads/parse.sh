@@ -19,7 +19,7 @@ done
 # 01a-csrspmv-1.5-a64fx-sc-02-l2ways-1-l1ways-${DATE}/
 # 01a-csrspmv-1.5-a64fx-sc-02-l2ways-${DATE}/
 
-for l2 in 02 03 04 05 06 07 08 09 10 11 12 13 14; do
+for l2 in 02 03 04 05 06 07 08 09 10 11 12; do
 	for f in csrspmv-${VERS}-a64fx-${DATE}/results/01a-csrspmv-${VERS}-a64fx-sc-$l2-l2ways-${DATE}/*/*stderr.txt; do
 			FILE=${f%-stderr.txt*}
 			FILE=${FILE##*/}
